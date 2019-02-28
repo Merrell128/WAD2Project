@@ -1,13 +1,21 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html>
-	<head>
-		<title>Restaurants Reviews</title>
-	</head>
-	<body>
-		<h1>Restaurant reviews!</h1><br /.
-		<strong>{{ boldmessage }}</strong><br />
-		<div>
-			<a href="/restaurants/about/">About</a><br />
-		</div>
-	</body>
+<head>
+  <link rel="stylesheet" href="{% static "css/styles.css" %}"/>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+<select multiple name="interests" size="4">
+ <option value="arts">Arts</option>
+ <option value="pol" >Politics</option>
+ <option value="sci" >Science</option>
+ <option value="comp">Computers and internet</option>
+ <option value="test">Can i scrool?</option>
+ <option value="abc">lets see</option>
+</select>
+
+</body>
 </html>
