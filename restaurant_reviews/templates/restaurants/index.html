@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+{% extends 'restaurants/base.html' %}
+{% load staticfiles %}
+
+{% block body %}
 {% load staticfiles %}
 <html>
 <head>
@@ -7,15 +11,15 @@
 <body>
 
 <h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-<select multiple name="interests" size="4">
- <option value="arts">Arts</option>
- <option value="pol" >Politics</option>
- <option value="sci" >Science</option>
- <option value="comp">Computers and internet</option>
- <option value="test">Can i scrool?</option>
- <option value="abc">lets see</option>
-</select>
-
+    <p>This is a paragraph.</p>
+        <select multiple name="interests" size="4">
+        <option value="arts">Arts</option>
+        <option value="pol" >Politics</option>
+        <option value="sci" >Science</option>
+            <option value="comp">Computers and internet</option>
+         <option value="test">Can i scrool?</option>
+        <option value="abc">lets see</option>
+        </select>
+{% endblock %}
 </body>
 </html>
