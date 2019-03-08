@@ -3,23 +3,35 @@
 {% load staticfiles %}
 
 {% block body %}
-{% load staticfiles %}
+
 <html>
 <head>
   <link rel="stylesheet" href="{% static "css/styles.css" %}"/>
+	<title>Restaurant Reviews</title>
+	
 </head>
 <body>
+	
+	<div id="container">
+		<div id="header">
+			<h1>Restaurant Reviews</h1>
+		</div>
+		<div id="content">
+			<div id = "nav">
+				<h3>Most liked Restaurants</h3>
+			
+			</div>
+			
+			<div id="main">
+				<h3>Cuisines</h3>
+			</div>
+		
+		</div>
+		<div id ="footer">
+			
+	</div>
 
-<h1>This is a heading</h1>
-    <p>This is a paragraph.</p>
-        <select multiple name="interests" size="4">
-        <option value="arts">Arts</option>
-        <option value="pol" >Politics</option>
-        <option value="sci" >Science</option>
-            <option value="comp">Computers and internet</option>
-         <option value="test">Can i scrool?</option>
-        <option value="abc">lets see</option>
-        </select>
+
 {% endblock %}
 </body>
 </html>
