@@ -3,7 +3,7 @@ from restaurants.models import Restaurant, Review, UserProfile
 from django.core.validators import MaxValueValidator, MinValueValidator
 
 class RestaurantForm(forms.ModelForm):
-	name = forms.CharField(max_length=3,
+	restaurant_name = forms.CharField(max_length=3,
 	help_text="Please enter the name of the restaurant.")
 	address = forms.CharField(max_length=100,
 	help_text="Please enter the address of the restaurant")
@@ -12,7 +12,7 @@ class RestaurantForm(forms.ModelForm):
 	
 	class Meta:
 		model = Restaurant
-		fields = ('name', 'picture','cuisine')
+		fields = ('restaurant_name', 'picture','cuisine', 'address', 'telephone')
 
 class ReviewForm(forms.ModelForm):
 	rating = forms.IntegerField(help_text = 'Enter a value from 1 to 5')
