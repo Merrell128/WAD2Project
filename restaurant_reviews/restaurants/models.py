@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 from django.core.validators import MaxValueValidator, MinValueValidator
 
 class Restaurant(models.Model):
-	name = models.CharField(max_length=30)
+	restaurant_name = models.CharField(max_length=30)
 	address = models.CharField(max_length=100, unique=True)
 	telephone = models.IntegerField(max_length=14)
 	cuisine = models.CharField(max_length=30)
