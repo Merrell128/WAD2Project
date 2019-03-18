@@ -8,7 +8,7 @@ class Restaurant(models.Model):
 	name = models.CharField(max_length=30)
 	address = models.CharField(max_length=100, unique=True)
 	telephone = models.IntegerField(max_length=14)
-	Cuisine = models.CharField(max_length=30)
+	cuisine = models.CharField(max_length=30)
 	picture = models.FileField(upload_to='restaurants_uploads/')
 	slug = models.SlugField(unique=True)
 

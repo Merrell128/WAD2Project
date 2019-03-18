@@ -11,7 +11,7 @@ class RestaurantForm(forms.ModelForm):
 	
 	
 	class Meta:
-		model = RestaurantForm
+		model = Restaurant
 		fields = ('name', 'picture','cuisine')
 
 class ReviewForm(forms.ModelForm):
@@ -19,7 +19,7 @@ class ReviewForm(forms.ModelForm):
 	review = forms.CharField(required = False)
 	
 	class Meta:
-		model = ReviewForm
+		model = Review
 		
 		fields = '__all__'
 		
@@ -28,14 +28,14 @@ class UserForm(forms.ModelForm):
 	password = forms.CharField(widget=forms.PasswordInput())
 	
 	class Meta:
-		model = UserForm
+		model = UserProfile
 		
-		fields = ('username', 'email', 'password')
+		fields = ('user', 'password')
 		
 class UserProfileForm(forms.ModelForm):
 	owner = forms.BooleanField(help_text = 'Check if you are an owner of a restaurant')
 	
 	class Meta:
-		model = UserProfileForm
+		model = UserProfile
 		
 		fields = ('owner', 'picture')
