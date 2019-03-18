@@ -38,4 +38,4 @@ class UserProfileForm(forms.ModelForm):
 	class Meta:
 		model = UserProfile
 		
-		fields = ('owner', 'picture')
+		fields = ('owner')
