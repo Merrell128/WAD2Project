@@ -30,7 +30,7 @@ class UserForm(forms.ModelForm):
 	class Meta:
 		model = UserProfile
 		
-		fields = ('user', 'password')
+		fields = ('user', 'password', 'name')
 		
 class UserProfileForm(forms.ModelForm):
 	owner = forms.BooleanField(help_text = 'Check if you are an owner of a restaurant')
