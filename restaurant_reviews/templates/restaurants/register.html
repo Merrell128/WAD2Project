@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 {% extends 'restaurants/base.html' %}
 {% block body %}
+{% load staticfiles %}
 <html lang="en">
     <head>
-        
+         <link rel="stylesheet" href="{% static "css/styles.css" %}"/>
     </head>
     <body>
-	
-		<div id="searchbar"">
+	<div id ="register-container"
+		<div id="register">
 			<form action="">
 				<input type="text" placeholder="Username" name="username"><br>
 				<input type="text" placeholder="Firstname" name="firstname"><br>
@@ -15,13 +16,14 @@
 				<input type="text" placeholder="Email" name="email"><br>
 				<input type="checkbox" name="Restaurant-owner"> I own a restaurant<br>
 				<input type="checkbox" name="non-owner"> I do not own a restaurant<br>
+				<input type="submit" value="Submit">
 				
 				
 				<br>
 				
 			</form>
 		</div>
-	
+	</div>
 
     </body>
     {% endblock %}

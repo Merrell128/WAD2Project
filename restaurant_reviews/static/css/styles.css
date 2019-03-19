@@ -45,3 +45,20 @@
 	clear: both;
 	text-align: center
 }
+
+#register-container {
+	padding-top:100px;
+	width: 50%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#register{
+	
+	
+	margin-left: auto;
+	margin-right:auto;
+	background-color: blue;
+	
+}
+	
