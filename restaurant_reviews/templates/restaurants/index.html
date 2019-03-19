@@ -8,29 +8,67 @@
 <head>
   <link rel="stylesheet" href="{% static "css/styles.css" %}"/>
 	<title>Restaurant Reviews</title>
-	
 </head>
-<body>
+
+<body id="index-body">
 	
-	<div id="container">
-		<div id="header">
-			<h1>Restaurant Reviews</h1>
+	<div id="index-container">
+		
+		<div id="headings"
+			<h2>Highest Rated Restaurants</h2>
+			<h2>cusines</h2>
+			
 		</div>
+		
 		<div id="content">
-			<div id = "nav">
-				<h3>Most liked Restaurants</h3>
+			
+			<div id="highest-rated"
+				<ol>
+					<li>Restaurant1</li>
+					<li>Restaurant2</li>
+					<li>Restaurant3</li>
+					<li>Restaurant4</li>
+					<li>Restaurant5</li>
+					<li>Restaurant5</li>
+					<li>Restaurant5</li>
+					<li>Restaurant5</li>
+					<li>Restaurant5</li>
+					<li>Restaurant5</li>
+					<li>Restaurant5</li>
+					<li>Restaurant5</li>
+					<li>Restaurant5</li>
+					<li>Restaurant5</li>
+					
+				</ol>
 			
 			</div>
 			
-			<div id="main">
-				<h3>Cuisines</h3>
+			<div id="cuisines"
+				<ul>
+					<li>italian</li>
+					<li>italian</li>
+					
+					<li>italian</li>
+					<li>italian</li>
+					<li>italian</li>
+					<li>italian</li>
+					<li>italian</li>
+					<li>italian</li>
+					<li>italian</li>
+				</ul>
 			</div>
 		
 		</div>
-		<div id ="footer">
-			
-	</div>
-
+		
+		<div id="searchbar">
+			<form action="">
+				<input type="text" placeholder="Search for a restaurant" name="search">
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+		
+	</div>	
+	
 
 {% endblock %}
 </body>
