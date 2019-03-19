@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'restaurants/base.html' %}
+{% load staticfiles %}
+
+{% block body %}
+
+<html>
+<head>
+  <link rel="stylesheet" href="{% static "css/styles.css" %}"/>
+	<title>Restaurant Reviews</title>
+</head>
+
+<body>
+	<div id="add-restaurant">
+			<form action="">
+				<input type="text" placeholder="Restaurant Name" name="restaurantname"><br>
+				<input type="text" placeholder="Address" name="address"><br>
+				<input type="text" placeholder="telephone" name="tel"><br>
+				<input type="submit" value="Submit">
+				
+				
+				<br>
+				
+			</form>
+		</div>
+
+{% endblock %}
+</body>
+</html>

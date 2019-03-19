@@ -33,7 +33,9 @@ def add_restaurant(request):
 
 	if request.method == 'POST':
 		form = RestaurantForm(request.POST)
-
+	 
+	return render(request, 'restaurants/add_restaurant.html', {})
+	
 def add_review(request, category_name_slug):
     try:
         restaurant = Restaurant.objects.get(slug=category_name_slug)
